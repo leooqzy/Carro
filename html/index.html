@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMax - Loja de Carros</title>
+    <meta name="description" content="AutoMax - Encontre o carro dos seus sonhos. Veículos seminovos com garantia e qualidade.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="font-sans">
+    
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-2xl font-bold text-blue-800">AutoMax</h1>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-blue-800 smooth-transition">Início</a>
+                <a href="#cars" class="text-gray-700 hover:text-blue-800 smooth-transition">Carros</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-800 smooth-transition">Sobre</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-800 smooth-transition">Contato</a>
+            </nav>
+
+            <button class="bg-blue-800 hover:bg-blue-900 text-white px-6 py-2 rounded-md smooth-transition">
+                Fale Conosco
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-white">
+        <div class="text-center max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Encontre o Carro dos<br>Seus Sonhos
+            </h1>
+            
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                Na AutoMax, oferecemos os melhores veículos com qualidade garantida 
+                e preços competitivos para toda família.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-800 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-md smooth-transition">
+                    Ver Carros Disponíveis
+                </button>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-blue-800 px-8 py-3 text-lg font-semibold rounded-md smooth-transition">
+                    Falar com Vendedor
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cars" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Nossos Veículos</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Confira nossa seleção de carros seminovos com garantia e qualidade comprovada
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden card-shadow">
+                    <div class="h-48 bg-gradient-to-r from-gray-300 to-gray-400 flex items-center justify-center">
+                        <span class="text-gray-600 font-semibold">Sedan Executivo</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sedan Executivo</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-blue-800">R$ 85.000</span>
+                            <span class="text-gray-600">Ano 2023</span>
+                        </div>
+                        <ul class="space-y-1 mb-6">
+                            <li class="text-gray-600 text-sm flex items-center">
+                                <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
+                                Automático
+                            </li>
+                            <li class="text-gray-600 text-sm flex items-center">
+                                <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
+                                Ar Condicionado
+                            </li>
+                            <li class="text-gray-600 text-sm flex items-center">
+                                <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
+                                Direção Elétrica
+                            </li>
+                        </ul>
+                        <button class="w-full bg-blue-800 hover:bg-blue-900 text-white py-2 rounded-md smooth-transition">
+                            Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden card-shadow">
+                    <div class="h-48 bg-gradient-to-r from-gray-800 to-gray-900 flex items-center justify-center">
+                        <span class="text-white font-semibold">SUV Premium</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">SUV Premium</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-blue-800">R$ 120.000</span>
+                            <span class="text-gray-600">Ano 2024</span>
+                        </div>
+                        <ul class="space-y-1 mb-6">
+                            <li class="text-gray-600 text-sm flex items-center">
+                                <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
+                                4x4
+                            </li>
+                            <li class="text-gray-600 text-sm flex items-center">
+                                <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
+                                7 Lugares
+                            </li>
+                            <li class="text-gray-600 text-sm flex items-center">
+                                <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
+                                Multimídia
+                            </li>
+                        </ul>
+                        <button class="w-full bg-blue-800 hover:bg-blue-900 text-white py-2 rounded-md smooth-transition">
+                            Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden card-shadow">
+                    <div class="h-48 bg-gradient-to-r from-red-400 to-red-500 flex items-center justify-center">
+                        <span class="text-white font-semibold">Hatch Econômico</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Hatch Econômico</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl font-bold text-blue-800">R$ 65.000</span>
+                            <span class="text-gray-600">Ano 2023</span>
+                        </div>
+                        <ul class="space-y-1 mb-6">
+                            <li class="text-gray-600 text-sm flex items-center">
+                                <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
+                                Econômico
+                            </li>
+                            <li class="text-gray-600 text-sm flex items-center">
+                                <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
+                                Compacto
+                            </li>
+                            <li class="text-gray-600 text-sm flex items-center">
+                                <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
+                                Baixo Consumo
+                            </li>
+                        </ul>
+                        <button class="w-full bg-blue-800 hover:bg-blue-900 text-white py-2 rounded-md smooth-transition">
+                            Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Sobre a AutoMax</h2>
+                    <p class="text-lg text-gray-600">Há mais de 15 anos no mercado automotivo</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Tradição e Confiança</h3>
+                        
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A AutoMax é uma concessionária familiar que atua no mercado há mais de 15 anos, 
+                            oferecendo veículos de qualidade com procedência garantida. Nossa missão é 
+                            conectar pessoas aos carros dos seus sonhos.
+                        </p>
+                        
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            Todos os nossos veículos passam por rigorosa inspeção técnica e contam com 
+                            garantia. Trabalhamos com transparência total e oferecemos as melhores 
+                            condições de financiamento do mercado.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-800 mb-2">500+</div>
+                                <div class="text-gray-600">Carros Vendidos</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-800 mb-2">15+</div>
+                                <div class="text-gray-600">Anos de Experiência</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-lg border">
+                            <h4 class="font-bold text-gray-800 mb-2">Garantia Total</h4>
+                            <p class="text-gray-600 text-sm">
+                                Todos os veículos com garantia de motor e câmbio por 3 meses
+                            </p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg border">
+                            <h4 class="font-bold text-gray-800 mb-2">Financiamento Facilitado</h4>
+                            <p class="text-gray-600 text-sm">
+                                Parcerias com os principais bancos para as melhores condições
+                            </p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg border">
+                            <h4 class="font-bold text-gray-800 mb-2">Atendimento Personalizado</h4>
+                            <p class="text-gray-600 text-sm">
+                                Equipe especializada para ajudar na escolha do veículo ideal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">AutoMax</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        A concessionária de confiança da sua família. Encontre o carro 
+                        perfeito com qualidade garantida e atendimento especializado.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-300">📍 Rua Palmira Freitas Rochas, 123 - Centro</p>
+                        <p class="text-gray-300">📞 (42) 0000-0000</p>
+                        <p class="text-gray-300">✉️ contato@automax.com.br</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Horário de Funcionamento</h4>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Segunda - Sexta:</span>
+                            <span>08:00 - 18:00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Sábados:</span>
+                            <span>08:00 - 16:00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Domingos:</span>
+                            <span>Fechado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Entre em Contato</h4>
+                    <p class="text-gray-300 mb-6">
+                        Fale conosco e agende uma visita para conhecer nossos veículos
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <button class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-md smooth-transition">
+                            WhatsApp
+                        </button>
+                        <button class="w-full border border-gray-600 text-white hover:bg-gray-700 py-3 rounded-md smooth-transition">
+                            Ligar Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 AutoMax. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
