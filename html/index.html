@@ -10,7 +10,6 @@
 </head>
 <body class="font-sans">
 
-    <!-- Header -->
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center space-x-2">
@@ -30,9 +29,11 @@
         </div>
     </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero-bg h-screen flex items-center justify-center text-white">
-        <div class="text-center max-w-4xl mx-auto px-4">
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-white relative">
+        <img src="BannerCarro.jpeg" alt="Carros em destaque"
+        class="absolute inset-0 w-full h-full object-cover opacity-90">
+
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Encontre o Carro dos<br>Seus Sonhos
             </h1>
@@ -41,17 +42,16 @@
                 e preços competitivos para toda família.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-white text-blue-800 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-md smooth-transition">
+                <a href="#cars" class="bg-white text-blue-800 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-md smooth-transition">
                     Ver Carros Disponíveis
-                </button>
-                <button class="border-2 border-white text-white hover:bg-white hover:text-blue-800 px-8 py-3 text-lg font-semibold rounded-md smooth-transition">
-                    Falar com Vendedor
-                </button>
+                </a>
+                <a href="contato.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-800 px-8 py-3 text-lg font-semibold rounded-md smooth-transition">
+                    Fale Conosco
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Carros -->
     <section id="cars" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -62,7 +62,6 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Sedan Executivo -->
                 <div class="bg-white rounded-lg overflow-hidden card-shadow">
                     <div class="h-48 overflow-hidden">
                         <img src="https://dicas.olx.com.br/wp-content/uploads/2023/07/jetta.png" 
@@ -95,7 +94,6 @@
                     </div>
                 </div>
 
-                <!-- SUV Premium -->
                 <div class="bg-white rounded-lg overflow-hidden card-shadow">
                     <div class="h-48 overflow-hidden">
                         <img src="https://alpes-hub.s3.amazonaws.com/uploads/public/666/356/dd3/666356dd3ec41479267043.png" 
@@ -128,7 +126,6 @@
                     </div>
                 </div>
 
-                <!-- Hatch Econômico -->
                 <div class="bg-white rounded-lg overflow-hidden card-shadow">
                     <div class="h-48 overflow-hidden">
                         <img src="https://www.consorcioplanoleve.com.br/arquivos/veiculos/194-2.jpg" 
@@ -164,7 +161,6 @@
         </div>
     </section>
 
-    <!-- Sobre -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="max-w-4xl mx-auto">
@@ -228,7 +224,6 @@
         </div>
     </section>
 
-    <!-- Contato / Formulário -->
     <footer id="contact" class="bg-gray-800 text-white py-16">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-12">
@@ -245,7 +240,6 @@
                     </div>
                 </div>
 
-                <!-- Horário de Funcionamento -->
                 <div>
                     <h4 class="text-xl font-bold mb-6">Horário de Funcionamento</h4>
                     <div class="space-y-3">
