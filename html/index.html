@@ -6,10 +6,11 @@
     <title>AutoMax - Loja de Carros</title>
     <meta name="description" content="AutoMax - Encontre o carro dos seus sonhos. Veículos seminovos com garantia e qualidade.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="font-sans">
-    
+
+    <!-- Header -->
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center space-x-2">
@@ -29,17 +30,16 @@
         </div>
     </header>
 
+    <!-- Hero -->
     <section id="home" class="hero-bg h-screen flex items-center justify-center text-white">
         <div class="text-center max-w-4xl mx-auto px-4">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Encontre o Carro dos<br>Seus Sonhos
             </h1>
-            
             <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
                 Na AutoMax, oferecemos os melhores veículos com qualidade garantida 
                 e preços competitivos para toda família.
             </p>
-            
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <button class="bg-white text-blue-800 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-md smooth-transition">
                     Ver Carros Disponíveis
@@ -51,6 +51,7 @@
         </div>
     </section>
 
+    <!-- Carros -->
     <section id="cars" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -61,50 +62,56 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sedan Executivo -->
                 <div class="bg-white rounded-lg overflow-hidden card-shadow">
-                    <div class="h-48 bg-gradient-to-r from-gray-300 to-gray-400 flex items-center justify-center">
-                        <span class="text-gray-600 font-semibold">Sedan Executivo</span>
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://dicas.olx.com.br/wp-content/uploads/2023/07/jetta.png" 
+                             alt="Sedan Executivo" 
+                             class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sedan Executivo</h3>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Jetta GLI</h3>
                         <div class="flex justify-between items-center mb-4">
-                            <span class="text-2xl font-bold text-blue-800">R$ 85.000</span>
+                            <span class="text-2xl font-bold text-blue-800">R$ 129.999</span>
                             <span class="text-gray-600">Ano 2023</span>
                         </div>
                         <ul class="space-y-1 mb-6">
                             <li class="text-gray-600 text-sm flex items-center">
                                 <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
-                                Automático
+                                Câmbio Automático
                             </li>
                             <li class="text-gray-600 text-sm flex items-center">
                                 <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
-                                Ar Condicionado
+                                Motor 2.0
                             </li>
                             <li class="text-gray-600 text-sm flex items-center">
                                 <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
-                                Direção Elétrica
+                                Esportividade e conforto
                             </li>
                         </ul>
-                        <button class="w-full bg-blue-800 hover:bg-blue-900 text-white py-2 rounded-md smooth-transition">
-                            Ver Detalhes
-                        </button>
+                        <a href="#contact" class="w-full block bg-blue-800 hover:bg-blue-900 text-white py-2 rounded-md text-center smooth-transition">
+                            Entrar em contato
+                        </a>
                     </div>
                 </div>
 
+                <!-- SUV Premium -->
                 <div class="bg-white rounded-lg overflow-hidden card-shadow">
-                    <div class="h-48 bg-gradient-to-r from-gray-800 to-gray-900 flex items-center justify-center">
-                        <span class="text-white font-semibold">SUV Premium</span>
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://alpes-hub.s3.amazonaws.com/uploads/public/666/356/dd3/666356dd3ec41479267043.png" 
+                             alt="SUV Premium" 
+                             class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">SUV Premium</h3>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Tiguan Allspace</h3>
                         <div class="flex justify-between items-center mb-4">
-                            <span class="text-2xl font-bold text-blue-800">R$ 120.000</span>
+                            <span class="text-2xl font-bold text-blue-800">R$ 209.999</span>
                             <span class="text-gray-600">Ano 2024</span>
                         </div>
                         <ul class="space-y-1 mb-6">
                             <li class="text-gray-600 text-sm flex items-center">
                                 <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
-                                4x4
+                                Conforto extremo
                             </li>
                             <li class="text-gray-600 text-sm flex items-center">
                                 <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
@@ -112,48 +119,52 @@
                             </li>
                             <li class="text-gray-600 text-sm flex items-center">
                                 <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
-                                Multimídia
+                                Tecnológico 
                             </li>
                         </ul>
-                        <button class="w-full bg-blue-800 hover:bg-blue-900 text-white py-2 rounded-md smooth-transition">
-                            Ver Detalhes
-                        </button>
+                        <a href="#contact" class="w-full block bg-blue-800 hover:bg-blue-900 text-white py-2 rounded-md text-center smooth-transition">
+                            Entrar em contato
+                        </a>
                     </div>
                 </div>
 
+                <!-- Hatch Econômico -->
                 <div class="bg-white rounded-lg overflow-hidden card-shadow">
-                    <div class="h-48 bg-gradient-to-r from-red-400 to-red-500 flex items-center justify-center">
-                        <span class="text-white font-semibold">Hatch Econômico</span>
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://www.consorcioplanoleve.com.br/arquivos/veiculos/194-2.jpg" 
+                             alt="Hatch Econômico" 
+                             class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Hatch Econômico</h3>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Golf GTI</h3>
                         <div class="flex justify-between items-center mb-4">
-                            <span class="text-2xl font-bold text-blue-800">R$ 65.000</span>
-                            <span class="text-gray-600">Ano 2023</span>
+                            <span class="text-2xl font-bold text-blue-800">R$ 109.999</span>
+                            <span class="text-gray-600">Ano 2019</span>
                         </div>
                         <ul class="space-y-1 mb-6">
                             <li class="text-gray-600 text-sm flex items-center">
                                 <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
-                                Econômico
+                                Motor Forte
                             </li>
                             <li class="text-gray-600 text-sm flex items-center">
                                 <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
-                                Compacto
+                                Confortavel
                             </li>
                             <li class="text-gray-600 text-sm flex items-center">
                                 <span class="w-2 h-2 bg-blue-800 rounded-full mr-2"></span>
-                                Baixo Consumo
+                                Eficiênte
                             </li>
                         </ul>
-                        <button class="w-full bg-blue-800 hover:bg-blue-900 text-white py-2 rounded-md smooth-transition">
-                            Ver Detalhes
-                        </button>
+                        <a href="#contact" class="w-full block bg-blue-800 hover:bg-blue-900 text-white py-2 rounded-md text-center smooth-transition">
+                            Entrar em contato
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Sobre -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="max-w-4xl mx-auto">
@@ -217,6 +228,7 @@
         </div>
     </section>
 
+    <!-- Contato / Formulário -->
     <footer id="contact" class="bg-gray-800 text-white py-16">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-12">
@@ -233,6 +245,7 @@
                     </div>
                 </div>
 
+                <!-- Horário de Funcionamento -->
                 <div>
                     <h4 class="text-xl font-bold mb-6">Horário de Funcionamento</h4>
                     <div class="space-y-3">
