@@ -23,35 +23,36 @@
                 <a href="contato.html" class="text-gray-700 hover:text-blue-800 smooth-transition">Contato</a>
             </nav>
 
-            <button class="bg-blue-800 hover:bg-blue-900 text-white px-6 py-2 rounded-md smooth-transition"><a href="contato.html">Fale Conosco</a>
+            <button class="bg-blue-800 hover:bg-blue-900 text-white px-6 py-2 rounded-md smooth-transition">
+                Fale Conosco
             </button>
         </div>
     </header>
 
-    <section id="home" class="hero-bg h-screen flex items-center justify-center text-white relative">
-        <img src="BannerCarro.jpeg" alt="Carros em destaque"
-        class="absolute inset-0 w-full h-full object-cover opacity-90">
+    <section id="home" class="relative h-screen flex items-center justify-center text-white overflow-hidden">
 
-    <div class="relative z-10 text-center max-w-4xl mx-auto px-4">
-        <div class="absolute inset-0 bg-black bg-opacity-25"></div>
-
-        <h1 class="relative text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
-            Encontre o Carro dos<br>Seus Sonhos
-        </h1>
-        <p class="relative text-xl mb-8 max-w-2xl mx-auto text-white opacity-90">
-            Na AutoMax, oferecemos os melhores veículos com qualidade garantida 
-            e preços competitivos para toda família.
-        </p>
-        <div class="relative flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#cars" class="bg-white text-blue-800 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-md smooth-transition">
-                Ver Carros Disponíveis
-            </a>
-            <a href="contato.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-800 px-8 py-3 text-lg font-semibold rounded-md smooth-transition">
-                Fale Conosco
-            </a>
-        </div>
+  <img src="BannerCarro.jpeg" alt="Carros em destaque"
+       class="absolute inset-0 w-full h-full object-cover opacity-90">
+  <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+  <div class="relative z-10 text-center px-6 max-w-3xl mx-auto animate-fadeIn">
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+      Encontre o <span class="text-blue-400">Carro dos Seus Sonhos</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-100 mb-10">
+      A AutoMax oferece veículos de qualidade garantida, procedência comprovada e as melhores condições do mercado.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#cars"
+         class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition">
+         🚗 Ver Carros Disponíveis
+      </a>
+      <a href="contato.html"
+         class="border-2 border-white hover:bg-white hover:text-blue-800 px-8 py-3 rounded-lg font-semibold transition">
+         📞 Fale Conosco
+      </a>
     </div>
-    </section>
+  </div>
+</section>
 
     <section id="cars" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
@@ -283,5 +284,11 @@
             </div>
         </div>
     </footer>
+    <button id="toTop" class="fixed bottom-6 right-6 bg-blue-800 text-white px-4 py-2 rounded-full shadow-lg hidden">
+      ↑
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>
