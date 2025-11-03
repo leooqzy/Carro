@@ -20,3 +20,18 @@ if (cta) {
     );
   });
 }
+
+const toTop = document.getElementById("toTop");
+if (toTop) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+      toTop.classList.remove("hidden");
+    } else {
+      toTop.classList.add("hidden");
+    }
+  });
+
+  toTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
