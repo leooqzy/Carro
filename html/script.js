@@ -35,3 +35,12 @@ if (toTop) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
+
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    alert("✅ Sua mensagem foi enviada com sucesso!");
+    form.reset();
+  });
