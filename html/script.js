@@ -10,3 +10,13 @@ document.querySelectorAll("section").forEach(sec => {
   sec.classList.add("opacity-0", "translate-y-8", "transition-all", "duration-700");
   observer.observe(sec);
 });
+
+const cta = document.querySelector("header button");
+if (cta) {
+  cta.addEventListener("mouseenter", () => {
+    cta.animate(
+      [{ transform: "scale(1)" }, { transform: "scale(1.05)" }, { transform: "scale(1)" }],
+      { duration: 300 }
+    );
+  });
+}
