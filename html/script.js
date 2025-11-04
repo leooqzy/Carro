@@ -41,6 +41,28 @@ if (toTop) {
   form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    alert("✅ Sua mensagem foi enviada com sucesso!");
+    const nome = document.getElementById("nome").value.trim();
+    const cpf = document.getElementById("cpf").value.trim();
+    const contato = document.getElementById("contato").value.trim();
+    const motivo = document.getElementById("motivo").value.trim();
+
+    const apenasNumeros = /^[0-9]+$/;
+
+    if (!nome || !cpf || !contato || !motivo) {
+      alert("⚠️ Por favor, preencha todos os campos antes de enviar.");
+      return;
+    }
+
+    if (!apenasNumeros.test(cpf) || cpf.length !== 11) {
+      alert("🧾 O CPF deve conter exatamente 11 números.");
+      return;
+    }
+
+    if (!apenasNumeros.test(contato) || contato.length < 8) {
+      alert("📞 O número de contato deve conter ao menos 8 números.");
+      return;
+    }
+
+    alert("✅ Mensagem enviada com sucesso!");
     form.reset();
   });
